@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="banner"></div>
+    <div id="chat"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+// CSS (styles.css)
+body {
+    font-family: Arial, sans-serif;
+}
+
+#banner {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#chat {
+    margin: 20px;
+}
+
+// JavaScript (script.js)
+// Functionality for chat app
+
+// Admin Class
+class Admin {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    removeUserAccount(username) {
+        // Code to remove user account
+    }
+
+    createBanner(message) {
+        document.getElementById('banner').innerText = message;
+    }
+
+    banUser(username, reason, time) {
+        // Code to ban user with reason and time
+    }
+}
+
+// User Class
+class User {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    displayBanScreen(reason, time) {
+        // Code to display ban screen with reason and time
+    }
+}
+
+// PHP (backend.php)
+<?php
+// PHP code for backend functionality like user authentication, database operations, etc.
+?>
+
+// Usage Examples
+const admin1 = new Admin('admin1', 'admin123');
+admin1.createBanner('Welcome to the Chat App!');
+
+const user1 = new User('user1', 'user123');
+user1.displayBanScreen('Inappropriate behavior', '3 days');
